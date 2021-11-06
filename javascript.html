@@ -5,15 +5,27 @@ var age=window.prompt("Enter your age:");
 document.write("Hello my name is ", name , " and age is ", age);
 
 if(age>=18){
-	document.write("You are selceted for vote.", "\n");
-    var select=window.prompt("Vote one team.");
-    select=1;
-    select++;
-    document.write(select);
+	document.write("You are selceted for vote.");
+    var select=window.prompt("<h1>Type 1 to vote team 1 and 2 to vote team 2 <h1>");
+    if(select==1){
+    	select=0;
+    	select++;
+    	document.write("<h1>Team 1 has<h1> ", select ," vote");
+    	
+	}else{
+    	select=0;
+    	select++;
+    	document.write("<h1>Team 2 has<h1> " , select ," <h1>vote<h1>");
+       
+    }
     
-        
+    document.write("Total vote is" , select);
+    	
 }else{ 
 	document.write("<h1>Sorry<h1>");
 }
+
+
+    	
 
 </script>
